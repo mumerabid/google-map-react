@@ -12,9 +12,7 @@ import {
 } from "reactstrap";
 import { GoogleMapThemes } from "../../assets/styles/google-map/google-maps-themes";
 import {
-  // black8,
-  blue8 as poiIcon,
-  green8 as districtIcon,
+  conductedAt,
   //  survey
 } from "../../assets/images";
 
@@ -155,22 +153,6 @@ class GoogleMap extends PureComponent {
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.mapLoaded) {
-      // added these lines to handle the reseting of the heatmap [reset heatmap]
-      // if (
-      //   this.props?.heatmapData !== prevProps.heatmapData &&
-      //   this.state.heatMap !== null
-      // ) {
-      //   if (this.state.ismultiHeatmap) {
-      //     console.log("multi heatmap reset");
-      //     this.state.multiHeatmaps.forEach((heatmap) => {
-      //       heatmap.setMap(null);
-      //     });
-      //   } else {
-      //     console.log("single heatmap reset");
-      //     this.state.heatMap.setMap(null);
-      //   }
-      // }
-      // till here[reset heatmap]
       if (
         this.props.polygons &&
         (!prevProps.polygons ||
@@ -684,7 +666,7 @@ class GoogleMap extends PureComponent {
         let mark = data[id];
         let marker = new googleMap.Marker({
           position: { lat: mark.position.lat, lng: mark.position.lng },
-          icon: mark.icon ? mark.icon : mark.isPoi ? poiIcon : districtIcon,
+          icon: mark.icon ? mark.icon : mark.isPoi ? conductedAt : conductedAt,
           label: mark.data.title ? mark.data.title : "",
         });
 
