@@ -13,6 +13,7 @@ import {
 } from "@ant-design/icons";
 import { Button, Menu } from "antd";
 import { useState } from "react";
+import Map2 from "./pages/Map2";
 function getItem(label, key, icon, children, type) {
   return {
     key,
@@ -23,9 +24,10 @@ function getItem(label, key, icon, children, type) {
   };
 }
 const items = [
+  getItem("pins", "pins", <AppstoreOutlined />),
   getItem("polygons", "polygons", <AppstoreOutlined />),
-  getItem("clusters", "clusters", <AppstoreOutlined />),
   getItem("heatmap", "heatmap", <ContainerOutlined />),
+  getItem("multilevelheatmap", "multilevelheatmap", <ContainerOutlined />),
 ];
 
 export default function App() {
@@ -35,7 +37,7 @@ export default function App() {
     setCollapsed(!collapsed);
   };
   // const { isLoaded, loadError } = useLoadScript({
-  //   googleMapsApiKey: "AIzaSyBdv1XrGqs_hIPfVFvo2IjnBVVa5jIm6JI",
+  //   googleMapsApiKey: "",
   // })
   // if (loadError) return "Error loading maps";
   // if (!isLoaded) return "Loading Maps";
@@ -43,10 +45,9 @@ export default function App() {
     <div
       style={{
         width: "100vw",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "row",
-        position: "relative",
+        // display: "flex",
+        // flexDirection: "row",
+        // position: "relative",
       }}
     >
       {/* market example */}
@@ -81,7 +82,34 @@ export default function App() {
           }}
         />
       </div> */}
-      <Map SimpleMapUsingApi selectedKeys={selectedKeys}></Map>
+
+      {/* <div
+        style={{
+          zIndex: 10,
+          position: "absolute",
+        }}
+      >
+        <Menu
+          defaultSelectedKeys={selectedKeys}
+          defaultOpenKeys={selectedKeys}
+          mode="inline"
+          theme="light"
+          inlineCollapsed={collapsed}
+          items={items}
+          style={{ height: "100vh" }}
+          onClick={(e) => {
+            // console.log(e);
+            setSelectedKeys([e.key]);
+            console.log(e.key);
+            setCollapsed(!collapsed);
+          }}
+        />
+      </div> */}
+
+      <div style={{ height: "90vh", overflow: "hidden" }}>
+        <Map selectedKeys={selectedKeys}></Map>
+        {/* <Map2></Map2> */}
+      </div>
     </div>
   );
 }

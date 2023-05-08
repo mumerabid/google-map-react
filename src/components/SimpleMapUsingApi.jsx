@@ -33,7 +33,7 @@ export default function SimpleMapUsingApi() {
 
   //
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBdv1XrGqs_hIPfVFvo2IjnBVVa5jIm6JI",
+    googleMapsApiKey: "",
     libraries: ["visualization"],
   });
 

@@ -13,7 +13,7 @@ export default function HeatMap() {
   const [redData, setRedData] = useState([]);
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBdv1XrGqs_hIPfVFvo2IjnBVVa5jIm6JI",
+    googleMapsApiKey: "",
     libraries: ["visualization"],
   });
 

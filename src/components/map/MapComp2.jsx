@@ -9,7 +9,7 @@ const MapComp2 = () => {
   return (
     <div style={{ height: "400px", width: "100%" }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyB3I-b43fURLg1l-XX4XtQVvqAdAmCMcMM" }}
+        bootstrapURLKeys={{ key: "" }}
         defaultCenter={center}
         defaultZoom={zoom}
       >

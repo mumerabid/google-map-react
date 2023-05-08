@@ -32,7 +32,7 @@ export default function MapComp({}) {
   const [finalCustomerslist, setFinalCustomerslist] = useState([]);
   //
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyB3I-b43fURLg1l-XX4XtQVvqAdAmCMcMM",
+    googleMapsApiKey: "",
     libraries: ["visualization"],
   });
   useEffect(() => {

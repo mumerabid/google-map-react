@@ -117,7 +117,7 @@ export default function PathWithAutoSearch() {
   };
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBdv1XrGqs_hIPfVFvo2IjnBVVa5jIm6JI",
+    googleMapsApiKey: "",
     libraries: ["places"],
   });
 

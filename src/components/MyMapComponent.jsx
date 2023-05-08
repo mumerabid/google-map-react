@@ -8,7 +8,7 @@ import {
 
 export default function MyMapComponent() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBdv1XrGqs_hIPfVFvo2IjnBVVa5jIm6JI",
+    googleMapsApiKey: "",
   });
 
   const mapContainerStyle = useMemo(() => ({

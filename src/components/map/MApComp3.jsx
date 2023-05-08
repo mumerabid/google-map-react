@@ -155,6 +155,22 @@ class GoogleMap extends PureComponent {
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.mapLoaded) {
+      // added these lines to handle the reseting of the heatmap [reset heatmap]
+      // if (
+      //   this.props?.heatmapData !== prevProps.heatmapData &&
+      //   this.state.heatMap !== null
+      // ) {
+      //   if (this.state.ismultiHeatmap) {
+      //     console.log("multi heatmap reset");
+      //     this.state.multiHeatmaps.forEach((heatmap) => {
+      //       heatmap.setMap(null);
+      //     });
+      //   } else {
+      //     console.log("single heatmap reset");
+      //     this.state.heatMap.setMap(null);
+      //   }
+      // }
+      // till here[reset heatmap]
       if (
         this.props.polygons &&
         (!prevProps.polygons ||
@@ -420,7 +436,7 @@ class GoogleMap extends PureComponent {
   handleNewHeatMap = () => {
     if (this.state.mapLoaded) {
       if (!this.resetingHeatmap) {
-        console.log(">>>>>>>>>>>>>>>");
+        // console.log(">>>>>>>>>>>>>>>");
         this.resetingHeatmap = true;
         let { polygons, heatMap, polygonInfoWindows, multiHeatmaps } =
           this.state;
@@ -571,7 +587,7 @@ class GoogleMap extends PureComponent {
       let ids = Object.keys(data);
       for (const [ind, id] of ids.entries()) {
         let polygon = data[id];
-        console.log("polygon", polygon);
+        // console.log("polygon", polygon);
         if (polygon.coordinates) {
           let poly = new googleMap.Polygon({
             paths: polygon.coordinates,
@@ -648,6 +664,7 @@ class GoogleMap extends PureComponent {
           // }
           poly.setMap(map);
           polygons.push(poly);
+          map.setZoom(9);
         }
       }
       if (!this.props.buildHeatMap) map.setOptions({ zoomControl: true });
@@ -699,6 +716,7 @@ class GoogleMap extends PureComponent {
         minimumClusterSize: 5,
       });
       this.setState({ markers, cluster });
+      map.setZoom(9);
       // this.setState({ markers });
     } catch (err) {
       console.error(err);
@@ -713,7 +731,7 @@ class GoogleMap extends PureComponent {
       let ids = Object.keys(data);
       for (const id of ids) {
         let polyline = data[id];
-        console.log("poly line");
+        // console.log("poly line");
         let poly = new googleMap.Polyline({
           path: polyline.path,
           strokeColor:
@@ -829,7 +847,7 @@ class GoogleMap extends PureComponent {
 
   buildHeatmapFromData = (data) => {
     try {
-      console.log(data);
+      // console.log(data);
       let { googleMap, map, infoWindow } = this.state;
       if (infoWindow) infoWindow.close(map, null);
       if (this.props.multiHeatmaps) return this.buildMultiHeatmapFromData(data);
@@ -875,6 +893,7 @@ class GoogleMap extends PureComponent {
       if (infoWindow) infoWindow.close(map, null);
       let multiHeatmaps = [];
       for (const level in data) {
+        // console.log(level);
         let heatMapData = [];
         let gradient = null;
         let levelData = data[level];
@@ -883,7 +902,7 @@ class GoogleMap extends PureComponent {
           let polygon = levelData[id];
           if (polygon.multiHeatmap) {
             if (!gradient)
-              if (polygon.style.gradient) gradient = polygon.style.gradient;
+              if (polygon?.style?.gradient) gradient = polygon?.style?.gradient;
             let coordinate = polygon.marker.position;
             let latLng = new googleMap.LatLng(coordinate.lat, coordinate.lng);
             // let weight = Math.sqrt(polygon.data.weight);
@@ -905,6 +924,7 @@ class GoogleMap extends PureComponent {
         heatMap.setMap(map);
         multiHeatmaps.push(heatMap);
       }
+      // console.log(multiHeatmaps);
       this.setState({ multiHeatmaps });
     } catch (err) {
       console.error(err);
@@ -914,7 +934,7 @@ class GoogleMap extends PureComponent {
   handlePolygonClick = (id, index, data) => {
     try {
       if (this.props.handlePolygonClick)
-        this.props.handlePolygonClick(id, index);
+        this.props.handlePolygonClick(id, index, data);
     } catch (err) {
       console.error(err);
     }
@@ -1064,7 +1084,7 @@ class GoogleMap extends PureComponent {
         <GoogleMapReact
           ref={this.googleMapRef}
           bootstrapURLKeys={{
-            key: "AIzaSyB3I-b43fURLg1l-XX4XtQVvqAdAmCMcMM",
+            key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
             libraries: ["visualization"],
           }}
           defaultCenter={
