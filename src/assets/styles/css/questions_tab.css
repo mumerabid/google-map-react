@@ -1,0 +1,7 @@
+.tooltip {
+	opacity: 1;
+	color: black;
+	background-color: bisque;
+	padding: 5px;
+	border-radius: 5px;
+}

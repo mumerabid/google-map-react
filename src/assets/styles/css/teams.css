@@ -1,0 +1,96 @@
+body {
+	background: #e2e2e2;
+}
+/********card frame **************/
+.gaadiex-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.gaadiex-list > .gaadiex-list-item {
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.gaadiex-list-item i,
+.teamAvatar i {
+	font-size: 14px;
+	color: #ff6939;
+}
+.gaadiex-list-item .teamAvatar {
+	width: 24px;
+	min-width: 24px;
+	height: 24px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ff6939;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.border-b-1 {
+	border-bottom: 1px solid rgba(162, 162, 162, 0.16);
+}
+.teamsh3 {
+	padding: 0px;
+	text-align: left;
+	font-size: 14px;
+	line-height: normal;
+	margin: 10px 5px;
+	font-weight: normal;
+	text-transform: none;
+}
+.teamsh3 > a {
+	max-width: 190px;
+}
+.h_100 {
+	height: 70vh;
+}
+.mt_35 {
+	padding-top: 15%;
+}
+.gaadiex-list-item-text {
+	width: 80%;
+	display: inline-block;
+}
+.color-red {
+	color: #dc3545 !important;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.team-row div[class*="col-md-"] {
+	padding-right: 0;
+}
+
+.team-row div[class*="col-md-"]:last-child {
+	padding-right: 15px;
+}
+.tableCustomControl {
+	margin-bottom: 0;
+}
+.tableCustomControl th {
+	font-weight: 500;
+}
+.tableCustomControl td {
+	font-weight: 400;
+}
+.tableCustomControl th,
+.tableCustomControl td {
+	font-size: 14px;
+}
+.starRatings {
+}
+.filtersCounter {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 14px;
+	align-items: center;
+}
+.filtersCounter ul li {
+	margin-right: 5px;
+}
