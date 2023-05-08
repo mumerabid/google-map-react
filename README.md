@@ -54,6 +54,26 @@ Contributions to this project are welcome. To contribute, follow the steps below
 
 ## Map
 
-![](src/assets/images/mdImages/1_maps.png "hover text")
+![](src/assets/images/mdImages/1_maps.png "1_maps")
+
+## Markers with Marker cluster
+
+![](src/assets/images/mdImages/2_markers.png "2_markers")
+
+## Polygons
+
+![](src/assets/images/mdImages/3_markers_with_polygon.png "3_markers_with_polygon")
+
+## Polygons and and markers according to selected population range
+
+![](src/assets/images/mdImages/4_polygons_and_markers_according_to_the_population.png "4_polygons_and_markers_according_to_the_population")
+
+## Heat Map
+
+![](src/assets/images/mdImages/5_heatmap.png "5_heatmap")
+
+## Multilevel Heat Map
+
+![](src/assets/images/mdImages/6_multilevel_heatmap.png "6_multilevel_heatmap")
 
 # Happy Coding!
