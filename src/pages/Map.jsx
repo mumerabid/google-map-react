@@ -148,7 +148,7 @@ export default function Map() {
     >
       <div className="w-100">
         <div className="bg-dark text-white text-center fw-bold p-2 mb-1">
-          Google Maps Practice
+          Google Maps React
         </div>
         {/* <div>
           slider
