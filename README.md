@@ -1,356 +1,110 @@
-<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-<foreignObject width="100" height="100">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-       <p>
-      React Google Maps is a web application that utilizes the Google Maps API
-      to display various features such as markers, marker clusters, polygons,
-      heat maps, and multi-level heat maps.
-    </p>
+Readme.md
 
-    <h2>Getting Started</h2>
+React Google Maps is a web application that utilizes the Google Maps API to display various features such as markers, marker clusters, polygons, heat maps, and multi-level heat maps.
 
-    <ol>
-      <li>
-        Clone the repository by running
-        <code>git clone https://github.com/mumerabid/google-maps-api.git</code>
-        in your terminal.
-      </li>
-      <li>
-        Navigate to the project directory by running
-        <code>cd google-maps-api</code>.
-      </li>
-      <li>
-        Install the required dependencies by running <code>npm install</code>.
-      </li>
-      <li>
-        Obtain a Google Maps API key from the
-        <a href="https://console.cloud.google.com/">Google Cloud Console</a>.
-      </li>
-      <li>
-        Create a <code>.env</code> file in the root directory of the project and
-        add the following line:
-        <code>REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY</code>, where
-        <code>YOUR_API_KEY</code> is your Google Maps API key.
-      </li>
-      <li>Start the application by running <code>npm start</code>.</li>
-    </ol>
+## Getting Started
 
-    <h2>Libraries Used</h2>
+1.  Clone the repository by running `git clone https://github.com/mumerabid/google-maps-api.git` in your terminal.
+2.  Navigate to the project directory by running `cd google-maps-api`.
+3.  Install the required dependencies by running `npm install`.
+4.  Obtain a Google Maps API key from the [Google Cloud Console](https://console.cloud.google.com/).
+5.  Create a `.env` file in the root directory of the project and add the following line: `REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY`, where `YOUR_API_KEY` is your Google Maps API key.
+6.  Start the application by running `npm start`.
 
-    <p>
-      The following libraries were used in the creation of this application:
-    </p>
+## Libraries Used
 
-    <ul>
-      <li><a href="https://reactjs.org/">React</a></li>
-      <li>
-        <a href="https://developers.google.com/maps/documentation"
-          >Google Maps API</a
-        >
-      </li>
-      <li>
-        <a href="https://github.com/google-map-react/google-map-react"
-          >google-map-react</a
-        >
-      </li>
-      <li>
-        <a href="https://www.npmjs.com/package/@googlemaps/markerclustererplus"
-          >@googlemaps/markerclustererplus</a
-        >
-      </li>
-      <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-    </ul>
+The following libraries were used in the creation of this application:
 
-    <h2>Features</h2>
+- [React](https://reactjs.org/)
+- React Google Maps is a web application that utilizes the Google Maps API to display various features such as markers, marker clusters, polygons, heat maps, and multi-level heat maps.
 
-    <p>The React Google Maps application includes the following features:</p>
+  ## Getting Started
 
-    <ul>
-      <li>Markers with customized icons and pop-up information on click</li>
-      <li>Marker clusters for improved performance</li>
-      <li>Polygons with customized colors and pop-up information on click</li>
-      <li>Heat maps with gradient colors based on data density</li>
-      <li>Multi-level heat maps with multiple layers of data</li>
-    </ul>
+  1.  Clone the repository by running `git clone https://github.com/mumerabid/google-maps-api.git` in your terminal.
+  2.  Navigate to the project directory by running `cd google-maps-api`.
+  3.  Install the required dependencies by running `npm install`.
+  4.  Obtain a Google Maps API key from the [Google Cloud Console](https://console.cloud.google.com/).
+  5.  Create a `.env` file in the root directory of the project and add the following line: `REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY`, where `YOUR_API_KEY` is your Google Maps API key.
+  6.  Start the application by running `npm start`.
 
-    <h2>How to Use</h2>
+  ## Libraries Used
 
-    <p>To use the application, follow the steps below:</p>
+  The following libraries were used in the creation of this application:
 
-    <ol>
-      <li>
-        Navigate to the desired location on the map by dragging the map or using
-        the search bar.
-      </li>
-      <li>Click on a marker to view its name.</li>
-      <li>Click on a polygon to view its associated data.</li>
-      <li>
-        Toggle the marker cluster display using the button in the top-right
-        corner of the map.
-      </li>
-      <li>
-        Toggle the heat map display using the button in the top-right corner of
-        the map.
-      </li>
-      <li>
-        Toggle the multi-level heat map layers using the button in the top-right
-        corner of the map.
-      </li>
-    </ol>
+  - [React](https://reactjs.org/)
+  - [Google Maps API](https://developers.google.com/maps/documentation)
+  - [google-map-react](https://github.com/google-map-react/google-map-react)
+  - [@googlemaps/markerclustererplus](https://www.npmjs.com/package/@googlemaps/markerclustererplus)
+  - [Bootstrap](https://getbootstrap.com/)
 
-    <h2>Contributing</h2>
-    <p>
-      Contributions to this project are welcome. To contribute, follow the steps
-      below:
-    </p>
-    <ol>
-      <li>Fork the repository and create a new branch for your changes.</li>
-      <li>Make your changes and ensure they are fully tested.</li>
-      <li>
-        Create a pull request and include a detailed description of your
-        changes.
-      </li>
-      <li>Wait for feedback and address any requested changes.</li>
-      <li>After approval, your changes will be merged into the main branch.</li>
-    </ol>
-    <h1>Happy Coding!</h1>
-    </div>
+  ## Features
 
-</foreignObject>
-</svg>
+  The React Google Maps application includes the following features:
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Readme.md</title>
-  </head>
-  <body>
-    <p>
-      React Google Maps is a web application that utilizes the Google Maps API
-      to display various features such as markers, marker clusters, polygons,
-      heat maps, and multi-level heat maps.
-    </p>
+  - Markers with customized icons and pop-up information on click
+  - Marker clusters for improved performance
+  - Polygons with customized colors and pop-up information on click
+  - Heat maps with gradient colors based on data density
+  - Multi-level heat maps with multiple layers of data
 
-    <h2>Getting Started</h2>
+  ## How to Use
 
-    <ol>
-      <li>
-        Clone the repository by running
-        <code>git clone https://github.com/mumerabid/google-maps-api.git</code>
-        in your terminal.
-      </li>
-      <li>
-        Navigate to the project directory by running
-        <code>cd google-maps-api</code>.
-      </li>
-      <li>
-        Install the required dependencies by running <code>npm install</code>.
-      </li>
-      <li>
-        Obtain a Google Maps API key from the
-        <a href="https://console.cloud.google.com/">Google Cloud Console</a>.
-      </li>
-      <li>
-        Create a <code>.env</code> file in the root directory of the project and
-        add the following line:
-        <code>REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY</code>, where
-        <code>YOUR_API_KEY</code> is your Google Maps API key.
-      </li>
-      <li>Start the application by running <code>npm start</code>.</li>
-    </ol>
+  To use the application, follow the steps below:
 
-    <h2>Libraries Used</h2>
+  1.  Navigate to the desired location on the map by dragging the map or using the search bar.
+  2.  Click on a marker to view its name.
+  3.  Click on a polygon to view its associated data.
+  4.  Toggle the marker cluster display using the button in the top-right corner of the map.
+  5.  Toggle the heat map display using the button in the top-right corner of the map.
+  6.  Toggle the multi-level heat map layers using the button in the top-right corner of the map.
 
-    <p>
-      The following libraries were used in the creation of this application:
-    </p>
+  ## Contributing
 
-    <ul>
-      <li><a href="https://reactjs.org/">React</a></li>
-      <li><p>
-      React Google Maps is a web application that utilizes the Google Maps API
-      to display various features such as markers, marker clusters, polygons,
-      heat maps, and multi-level heat maps.
-    </p>
+  Contributions to this project are welcome. To contribute, follow the steps below:
 
-    <h2>Getting Started</h2>
+  1.  Fork the repository and create a new branch for your changes.
+  2.  Make your changes and ensure they are fully tested.
+  3.  Create a pull request and include a detailed description of your changes.
+  4.  Wait for feedback and address any requested changes.
+  5.  After approval, your changes will be merged into the main branch.
 
-    <ol>
-      <li>
-        Clone the repository by running
-        <code>git clone https://github.com/mumerabid/google-maps-api.git</code>
-        in your terminal.
-      </li>
-      <li>
-        Navigate to the project directory by running
-        <code>cd google-maps-api</code>.
-      </li>
-      <li>
-        Install the required dependencies by running <code>npm install</code>.
-      </li>
-      <li>
-        Obtain a Google Maps API key from the
-        <a href="https://console.cloud.google.com/">Google Cloud Console</a>.
-      </li>
-      <li>
-        Create a <code>.env</code> file in the root directory of the project and
-        add the following line:
-        <code>REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY</code>, where
-        <code>YOUR_API_KEY</code> is your Google Maps API key.
-      </li>
-      <li>Start the application by running <code>npm start</code>.</li>
-    </ol>
+  # Happy Coding!
 
-    <h2>Libraries Used</h2>
+  [Google Maps API](https://developers.google.com/maps/documentation)
 
-    <p>
-      The following libraries were used in the creation of this application:
-    </p>
+- [google-map-react](https://github.com/google-map-react/google-map-react)
+- [@googlemaps/markerclustererplus](https://www.npmjs.com/package/@googlemaps/markerclustererplus)
+- [Bootstrap](https://getbootstrap.com/)
 
-    <ul>
-      <li><a href="https://reactjs.org/">React</a></li>
-      <li>
-        <a href="https://developers.google.com/maps/documentation"
-          >Google Maps API</a
-        >
-      </li>
-      <li>
-        <a href="https://github.com/google-map-react/google-map-react"
-          >google-map-react</a
-        >
-      </li>
-      <li>
-        <a href="https://www.npmjs.com/package/@googlemaps/markerclustererplus"
-          >@googlemaps/markerclustererplus</a
-        >
-      </li>
-      <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-    </ul>
+## Features
 
-    <h2>Features</h2>
+The React Google Maps application includes the following features:
 
-    <p>The React Google Maps application includes the following features:</p>
+- Markers with customized icons and pop-up information on click
+- Marker clusters for improved performance
+- Polygons with customized colors and pop-up information on click
+- Heat maps with gradient colors based on data density
+- Multi-level heat maps with multiple layers of data
 
-    <ul>
-      <li>Markers with customized icons and pop-up information on click</li>
-      <li>Marker clusters for improved performance</li>
-      <li>Polygons with customized colors and pop-up information on click</li>
-      <li>Heat maps with gradient colors based on data density</li>
-      <li>Multi-level heat maps with multiple layers of data</li>
-    </ul>
+## How to Use
 
-    <h2>How to Use</h2>
+To use the application, follow the steps below:
 
-    <p>To use the application, follow the steps below:</p>
+1.  Navigate to the desired location on the map by dragging the map or using the search bar.
+2.  Click on a marker to view its name.
+3.  Click on a polygon to view its associated data.
+4.  Toggle the marker cluster display using the button in the top-right corner of the map.
+5.  Toggle the heat map display using the button in the top-right corner of the map.
+6.  Toggle the multi-level heat map layers using the button in the top-right corner of the map.
 
-    <ol>
-      <li>
-        Navigate to the desired location on the map by dragging the map or using
-        the search bar.
-      </li>
-      <li>Click on a marker to view its name.</li>
-      <li>Click on a polygon to view its associated data.</li>
-      <li>
-        Toggle the marker cluster display using the button in the top-right
-        corner of the map.
-      </li>
-      <li>
-        Toggle the heat map display using the button in the top-right corner of
-        the map.
-      </li>
-      <li>
-        Toggle the multi-level heat map layers using the button in the top-right
-        corner of the map.
-      </li>
-    </ol>
+## Contributing
 
-    <h2>Contributing</h2>
-    <p>
-      Contributions to this project are welcome. To contribute, follow the steps
-      below:
-    </p>
-    <ol>
-      <li>Fork the repository and create a new branch for your changes.</li>
-      <li>Make your changes and ensure they are fully tested.</li>
-      <li>
-        Create a pull request and include a detailed description of your
-        changes.
-      </li>
-      <li>Wait for feedback and address any requested changes.</li>
-      <li>After approval, your changes will be merged into the main branch.</li>
-    </ol>
-    <h1>Happy Coding!</h1>
-        <a href="https://developers.google.com/maps/documentation"
-          >Google Maps API</a
-        >
-      </li>
-      <li>
-        <a href="https://github.com/google-map-react/google-map-react"
-          >google-map-react</a
-        >
-      </li>
-      <li>
-        <a href="https://www.npmjs.com/package/@googlemaps/markerclustererplus"
-          >@googlemaps/markerclustererplus</a
-        >
-      </li>
-      <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-    </ul>
+Contributions to this project are welcome. To contribute, follow the steps below:
 
-    <h2>Features</h2>
+1.  Fork the repository and create a new branch for your changes.
+2.  Make your changes and ensure they are fully tested.
+3.  Create a pull request and include a detailed description of your changes.
+4.  Wait for feedback and address any requested changes.
+5.  After approval, your changes will be merged into the main branch.
 
-    <p>The React Google Maps application includes the following features:</p>
-
-    <ul>
-      <li>Markers with customized icons and pop-up information on click</li>
-      <li>Marker clusters for improved performance</li>
-      <li>Polygons with customized colors and pop-up information on click</li>
-      <li>Heat maps with gradient colors based on data density</li>
-      <li>Multi-level heat maps with multiple layers of data</li>
-    </ul>
-
-    <h2>How to Use</h2>
-
-    <p>To use the application, follow the steps below:</p>
-
-    <ol>
-      <li>
-        Navigate to the desired location on the map by dragging the map or using
-        the search bar.
-      </li>
-      <li>Click on a marker to view its name.</li>
-      <li>Click on a polygon to view its associated data.</li>
-      <li>
-        Toggle the marker cluster display using the button in the top-right
-        corner of the map.
-      </li>
-      <li>
-        Toggle the heat map display using the button in the top-right corner of
-        the map.
-      </li>
-      <li>
-        Toggle the multi-level heat map layers using the button in the top-right
-        corner of the map.
-      </li>
-    </ol>
-
-    <h2>Contributing</h2>
-    <p>
-      Contributions to this project are welcome. To contribute, follow the steps
-      below:
-    </p>
-    <ol>
-      <li>Fork the repository and create a new branch for your changes.</li>
-      <li>Make your changes and ensure they are fully tested.</li>
-      <li>
-        Create a pull request and include a detailed description of your
-        changes.
-      </li>
-      <li>Wait for feedback and address any requested changes.</li>
-      <li>After approval, your changes will be merged into the main branch.</li>
-    </ol>
-    <h1>Happy Coding!</h1>
-
-  </body>
-</html>
+# Happy Coding!
