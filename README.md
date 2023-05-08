@@ -4,8 +4,8 @@ React Google Maps is a web application that utilizes the Google Maps API to disp
 
 ## Getting Started
 
-1.  Clone the repository by running `git clone https://github.com/mumerabid/google-maps-api.git` in your terminal.
-2.  Navigate to the project directory by running `cd google-maps-api`.
+1.  Clone the repository by running `git clone https://github.com/mumerabid/google-map-react.git` in your terminal.
+2.  Navigate to the project directory by running `cd google-map-react`.
 3.  Install the required dependencies by running `npm install`.
 4.  Obtain a Google Maps API key from the [Google Cloud Console](https://console.cloud.google.com/).
 5.  Create a `.env` file in the root directory of the project and add the following line: `REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY`, where `YOUR_API_KEY` is your Google Maps API key.
