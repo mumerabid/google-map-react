@@ -2,6 +2,8 @@ Readme.md
 
 React Google Maps is a web application that utilizes the Google Maps API to display various features such as markers, marker clusters, polygons, heat maps, and multi-level heat maps.
 
+Demo: https://mumerabid.github.io/google-map-react/
+
 ## Getting Started
 
 1.  Clone the repository by running `git clone https://github.com/mumerabid/google-maps-api.git` in your terminal.
